@@ -4,14 +4,14 @@
 #include "fileabstract.h"
 using namespace std;
 
-class File: public Fileabstract
+class file: public Fileabstract
 {
 	private:
 		string nombre;
 
     public:
-        File(string nom);
-        ~File();
+        file(string nom);
+        ~file();
         void listar();
 
 };
