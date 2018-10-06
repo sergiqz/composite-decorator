@@ -6,3 +6,15 @@ Directorio::Directorio(string nom){
 
 }
 
+void Directorio::listar(){
+	
+
+}
+
+
+
+void Directorio::add(Fileabstract* fileabs){
+	files.push_back(fileabs);
+
+
+}
