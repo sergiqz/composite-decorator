@@ -1,19 +1,21 @@
 #ifndef DIRECTORIO_H
 #define DIRECTORIO_H
 #include <iostream>
+#include "fileabstract.h"
+#include <vector>
 using namespace std;
 
 class Directorio
 {
 	private:
 		string nombre;
-		Fileabstract *fileabstra;
+		vector<Fileabstract *> files;
 
     public:
         Directorio(string nom);
         ~Directorio(){}
         void listar();
-        addFile(Fileabstract* fileabs);
+        add(Fileabstract* fileabs);
 
 };
 
