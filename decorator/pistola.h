@@ -8,5 +8,9 @@ class pistola: public widget
     void do_this()
     {
     }
+    void drawMe(QPainter *DrawHere){
+      QImage image1 ("images/pistola.png");
+      DrawHere->drawImage(30,30,image1);
+    }
 };
 #endif // PISTOLA_H

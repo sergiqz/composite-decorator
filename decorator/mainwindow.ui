@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>704</width>
-    <height>290</height>
+    <width>832</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QCheckBox" name="mira">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>690</x>
       <y>70</y>
       <width>70</width>
       <height>17</height>
@@ -30,7 +30,7 @@
    <widget class="QCheckBox" name="largo">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>690</x>
       <y>100</y>
       <width>81</width>
       <height>17</height>
@@ -43,7 +43,7 @@
    <widget class="QCheckBox" name="culata">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>690</x>
       <y>130</y>
       <width>70</width>
       <height>17</height>
@@ -56,7 +56,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>690</x>
       <y>170</y>
       <width>75</width>
       <height>23</height>
@@ -71,9 +71,12 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>541</width>
-      <height>211</height>
+      <width>671</width>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
     </property>
     <property name="text">
      <string>l</string>
@@ -85,7 +88,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>704</width>
+     <width>832</width>
      <height>21</height>
     </rect>
    </property>

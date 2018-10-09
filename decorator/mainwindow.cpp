@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    pixmap=new QPixmap(400,300);
+    pixmap=new QPixmap(700,700);
     pixmap->fill();
 
 
@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent) :
     q=new QPainter(pixmap);
     q->setPen(*lapiz);
     pis=new pistola();
+
 }
 
 MainWindow::~MainWindow()
@@ -35,16 +36,27 @@ MainWindow::~MainWindow()
     delete ui;
 }
 widget* MainWindow::create(bool x,bool y,bool z){
-    widget* tmp;
-    if(x)
-        tmp=new elementy(pis);
-    if(y)
-        tmp=new elementz(pis);
-    if(z)
+    widget* tmp=nullptr;
+    pixmap->fill();
+    pis->drawMe(q);
+    //ui->l_area->setPixmap(*pixmap);
+    if(x){
         tmp=new elementx(pis);
+        tmp->drawMe(q);
+    }
+    if(y){
+        tmp=new elementy(pis);
+        tmp->drawMe(q);
+    }
+    if(z){
+        tmp=new elementz(pis);
+        tmp->drawMe(q);
+    }
+    ui->l_area->setPixmap(*pixmap);
     return tmp;
 }
 void MainWindow::on_pushButton_clicked()
 {
     create(ui->mira->isChecked(),ui->largo->isChecked(),ui->culata->isChecked());
+
 }

@@ -33,6 +33,7 @@ private:
     QPixmap *pixmap;
     QPen *lapiz;
     pistola* pis;
+   // widget *deco;
 
 };
 

@@ -1,7 +1,7 @@
 #ifndef DECORATOR_H
 #define DECORATOR_H
 #include "widget.h"
-
+#include "QPainter"
 class decorator: public widget
 {
     widget *wid;
@@ -14,5 +14,6 @@ class decorator: public widget
     {
         wid->do_this();
     }
+
 };
 #endif // DECORATOR_H
